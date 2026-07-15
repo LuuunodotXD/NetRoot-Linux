@@ -1,0 +1,4 @@
+#!/bin/sh
+/bin/mount -t tmpfs tmpfs /tmp
+/bin/hostname netroot
+echo "rcS ok"
