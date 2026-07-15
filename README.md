@@ -55,4 +55,3 @@ NetLinux is distributed under the GPL‑2.0 license. See `Sources/README.md` for
 ---
 
 *July 2026*
-```
