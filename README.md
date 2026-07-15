@@ -21,30 +21,35 @@ All source code is available in the `sources/` directory and is licensed under G
 
 ## Quick Start – Boot the ISO
 
-Download or build the ISO image (`netroot.iso`) and run it with QEMU:
+Download or build the ISO image (`netroot.iso`). You can run it with QEMU:
 
-```bash
+```sh
 qemu-system-x86_64 -cdrom netlinux.iso -display sdl
 ```
 
 For a serial console (output in the terminal):
 
-```bash
+```sh
 qemu-system-x86_64 -cdrom netlinux.iso -nographic
 ```
 
 ## After Boot – Network Setup
 
-Once the system starts, you’ll get a shell (`~#`). To enable networking:
+When the system starts, you can login:
+```
+login: root, passwd: root \\ login: netroot, passwd: netroot
+```
 
-```bash
+Once you login, you’ll get a shell (`~#`). To enable networking:
+
+```sh
 ip link set eth0 up
 udhcpc -i eth0 -s /etc/udhcpc.conf
 ```
 
 Test connectivity with:
 
-```bash
+```sh
 wget -O - http://example.org
 ```
 
