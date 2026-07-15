@@ -1,6 +1,6 @@
-# NetLinux – Minimal Linux System
+# NetRoot Linux – Minimal Linux System
 
-NetLinux is a lightweight, bootable Linux system built from scratch.  
+NetRoot Linux is a lightweight, bootable Linux system built from scratch.  
 It includes just the essential components to run a functional shell with networking.
 
 ## Requirements
@@ -24,13 +24,13 @@ All source code is available in the `sources/` directory and is licensed under G
 Download or build the ISO image (`netroot.iso`). You can run it with QEMU:
 
 ```sh
-qemu-system-x86_64 -cdrom netlinux.iso -display sdl
+qemu-system-x86_64 -cdrom netroot.iso -display sdl
 ```
 
 For a serial console (output in the terminal):
 
 ```sh
-qemu-system-x86_64 -cdrom netlinux.iso -nographic
+qemu-system-x86_64 -cdrom netroot.iso -nographic
 ```
 
 ## After Boot – Network Setup
@@ -55,7 +55,7 @@ wget -O - http://example.org
 
 ## License
 
-NetLinux is distributed under the GPL‑2.0 license. See `Sources/README.md` for component details.
+NetRoot Linux is distributed under the GPL‑2.0 license. See `Sources/README.md` for component details.
 
 ---
 
